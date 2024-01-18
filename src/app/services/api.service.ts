@@ -8,7 +8,7 @@ import { of } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  private api = 'https://restcountries.com/v3';
+  private api = 'https://restcountries.com/v3.1';
 
   constructor(private http: HttpClient) {}
 

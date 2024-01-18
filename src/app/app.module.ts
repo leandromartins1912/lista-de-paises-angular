@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+
+
 
 
 @NgModule({
@@ -31,8 +33,12 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     NgbModule,
   ],
   exports: [
-    DropdownComponent,
+    CardComponent,
+    NavbarComponent,
+    HomeComponent,
+    DropdownComponent
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
